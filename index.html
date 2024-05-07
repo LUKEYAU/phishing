@@ -1,84 +1,61 @@
-<!DOCTYPE html> <!-- 聲明文件類型為 HTML -->
-
-<html lang="zh_TW"> <!-- 設置語言為繁體中文 -->
+<!DOCTYPE html>
+<html lang="zh_TW">
 
 <head>
-    <title>iLearn: 登入本網站</title> <!-- 設置網頁標題 -->
-
-    <link rel="shortcut icon" href="image/favicon.ico" /> <!-- 設置網頁圖標 -->
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <!-- 設置編碼類型為 UTF-8 -->
-
-    <link rel="stylesheet" type="text/css" href="https://ilearn.fcu.edu.tw/theme/styles.php/moove/1711685263_1689239036/all" /> <!-- 引入外部 CSS 文件 -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com/" /> <!-- 預連接到 Google Fonts -->
-
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin /> <!-- 預連接到 Google Fonts 的靜態資源 -->
-
-    <!-- 引入 Google Fonts 的 Roboto 字體 -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap"
-          rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 設置視窗寬度為設備寬度，初始縮放為 1.0 -->
+    <title>iLearn: 登入本網站</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="https://ilearn.fcu.edu.tw/theme/styles.php/moove/1711685263_1689239036/all" />
 </head>
 
 <body id="page-login-index" class="format-site  path-login dir-ltr lang-zh_tw yui-skin-sam yui3-skin-sam ilearn-fcu-edu-tw pagelayout-login course-1 context-1 notloggedin moove-login">
-<!-- 設置 body 的 id 和 class -->
-
 <div id="page-wrapper">
     <div id="page" class="container-fluid mt-0">
         <div id="page-content" class="row">
-            <div id="region-main-box" class="col-12">
-                <section id="region-main" class="col-12 h-100" aria-label="內容">
-                    <div class="login-wrapper">
-                        <div class="login-container">
-                            <div role="main"><span id="maincontent"></span>
-                                <div class="loginform row hastwocolumns">
-                                    <div class="col-lg-6 col-md-12 left-column">
-                                        <div id="loginlogo" class="login-logo">
-                                            <img id="logoimage" src="image/moodle4_log.jpg" class="img-fluid"
-                                                 alt="iLearn" />
-                                        </div>
-                                        <form class="login-form" method="post" id="login">
-                                            <div class="login-form-username form-group">
-                                                <label for="username" class="sr-only">帳號</label>
-                                                <input type="text" name="username" id="username"
-                                                       class="form-control form-control-lg" value="" placeholder="帳號"
-                                                       autocomplete="username">
-                                            </div>
-                                            <div class="login-form-password form-group">
-                                                <label for="password" class="sr-only">密碼</label>
-                                                <input type="password" name="password" id="password" value=""
-                                                       class="form-control form-control-lg" placeholder="密碼"
-                                                       autocomplete="current-password">
-                                            </div>
-                                            <div class="login-form-submit form-group">
-                                                <button class="btn btn-primary btn-block btn-lg" type="submit"
-                                                        id="loginbtn">登入</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12 right-column">
-                                        <div class="column-content">
-                                            <p style="text-align:center;"><br /><span style="font-size:large;"><span
-                                                    style="font-size:large;"><span
-                                                    style="font-size:large;"></span></span></span><strong
-                                                    style="font-size:large;text-align:left;">請使用NID帳號/密碼登入平台。</strong>
-                                            </p>
-                                            <p style="text-align:center;"><strong
-                                                    style="font-size:large;text-align:left;"></strong><strong
-                                                    style="font-size:large;text-align:left;">欲變更NID密碼，請連結至 <a
-                                                    href="https://netid.fcu.edu.tw/" target="_blank"
-                                                    rel="noreferrer noopener"> <img
-                                                    src="image/nidlogo.png" alt="NID" /></a></strong>
-                                            </p>
-                                        </div>
-                                    </div>
+            <div class="login-wrapper">
+                <div class="login-container">
+                    <div class="loginform row hastwocolumns">
+                        <div class="col-lg-6 col-md-12 left-column">
+                            <img id="logoimage" src="image/moodle4_log.jpg" class="img-fluid" alt="iLearn" />
+                            <form class="login-form" method="post" id="login">
+                                <div class="login-form-username form-group">
+                                    <label for="username" class="sr-only">帳號</label>
+                                    <input type="text" name="username" id="username"
+                                           class="form-control form-control-lg" value="" placeholder="帳號"
+                                           autocomplete="username">
                                 </div>
+                                <div class="login-form-password form-group">
+                                    <label for="password" class="sr-only">密碼</label>
+                                    <input type="password" name="password" id="password" value=""
+                                           class="form-control form-control-lg" placeholder="密碼"
+                                           autocomplete="current-password">
+                                </div>
+                                <div class="login-form-submit form-group">
+                                    <button class="btn btn-primary btn-block btn-lg" type="submit"
+                                            id="loginbtn">登入</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-md-12 right-column">
+                            <div class="column-content">
+                                <p style="text-align:center;"><br />
+                                    <span style="font-size:large;"><span style="font-size:large;"><span
+                                            style="font-size:large;"></span>
+                                            </span></span><strong
+                                            style="font-size:large;text-align:left;">請使用NID帳號/密碼登入平台。</strong>
+                                </p>
+                                <p style="text-align:center;"><strong
+                                        style="font-size:large;text-align:left;"></strong>
+                                    <strong style="font-size:large;text-align:left;">欲變更NID密碼，請連結至<a
+                                            href="https://netid.fcu.edu.tw/" target="_blank"
+                                            rel="noreferrer noopener">
+                                        <img src="image/nidlogo.png" alt="NID" /></a>
+                                    </strong>
+                                </p>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </div>
